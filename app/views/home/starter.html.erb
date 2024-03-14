@@ -1,0 +1,11 @@
+<div class="w-full flex justify-center">
+  <div class="w-96 ">
+    <%= form_with(url: home_setting_up_path, method: :post) do |form| %>
+      <div class="flex flex-col gap-4 items-center">
+        <%= form.text_field :player1, placeholder:'player 1', class:'text-white border-none  bg-gray-800'%>
+        <%= form.text_field :player2, placeholder:'player 2', class:'text-white border-none  bg-gray-800'%>
+        <%= form.submit "Mulai Game", class:'bg-blue-500 w-fit px-4 py-2 rounded-xl text-white' %>
+      </div>
+    <% end %>
+  </div>
+</div>
